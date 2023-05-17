@@ -13,11 +13,11 @@ class video_provider extends ChangeNotifier {
   ];
 
   List images = [
+    "assets/images/WhatsApp Image 2023-05-15 at 11.34.16 AM.jpeg",
+    "assets/images/WhatsApp Image 2023-05-15 at 11.34.17 AM.jpeg",
     "assets/images/WhatsApp Image 2023-05-15 at 11.34.17 AM (1).jpeg",
-    "assets/images/WhatsApp Image 2023-05-15 at 11.34.17 AM (1).jpeg",
-    "assets/images/WhatsApp Image 2023-05-15 at 11.34.17 AM (1).jpeg",
-    "assets/images/WhatsApp Image 2023-05-15 at 11.34.17 AM (1).jpeg",
-    "assets/images/WhatsApp Image 2023-05-15 at 11.34.17 AM (1).jpeg",
+    "assets/images/WhatsApp Image 2023-05-15 at 11.34.18 AM.jpeg",
+    "assets/images/WhatsApp Image 2023-05-15 at 11.34.19 AM (1).jpeg",
 
   ];
 

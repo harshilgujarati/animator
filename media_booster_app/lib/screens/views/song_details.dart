@@ -197,8 +197,7 @@ class _MusicPlayState extends State<MusicPlay> {
                     ),
                     IconButton(
                         onPressed: () {
-                          Provider.of<MusicPlayerProvider>(context,
-                              listen: false)
+                          Provider.of<MusicPlayerProvider>(context,listen: false)
                               .nextSong();
                         },
                         icon: Icon(Icons.skip_next_rounded)),
