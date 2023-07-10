@@ -9,10 +9,8 @@ import 'controller/providers/weather_provider.dart';
 void main() {
   runApp(MultiProvider(
     providers: [
-      ChangeNotifierProvider(
-        create: (context) => WeatherProvider(),
-      ),
-      ChangeNotifierProvider(create: (context)=>Weather_Provider())
+      ChangeNotifierProvider(create: (context) => WeatherProvider(),),
+      ChangeNotifierProvider(create: (context) => Weather_Provider())
     ],
     child: MaterialApp(
       theme: ThemeData.light(useMaterial3: true),

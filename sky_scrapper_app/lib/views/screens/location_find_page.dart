@@ -19,7 +19,6 @@ class _location_find_pageState extends State<location_find_page> {
   @override
   void initState() {
     super.initState();
-    ;
     Provider.of<Weather_Provider>(context, listen: false).getCityName("surat");
   }
 

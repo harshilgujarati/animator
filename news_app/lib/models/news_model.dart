@@ -1,12 +1,9 @@
-import 'dart:io';
-
 class NewsModel {
   String author;
   String title;
   String description;
   String url;
   String source;
-  File image;
   String category;
   String language;
   String country;
@@ -18,7 +15,6 @@ class NewsModel {
     required this.description,
     required this.url,
     required this.source,
-    required this.image,
     required this.category,
     required this.language,
     required this.country,
@@ -32,7 +28,6 @@ class NewsModel {
       description: data["data"]["description"],
       url: data["data"]["url"],
       source: data["data"]["source"],
-      image: data["data"]["image"],
       category: data["data"]["category"],
       language: data["data"]["language"],
       country: data["data"]["country"],
