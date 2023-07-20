@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:invoice_generator_app/utils/globals.dart';
 
 class newinvoice extends StatefulWidget {
@@ -129,7 +130,11 @@ class _newinvoiceState extends State<newinvoice> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  Get.back();
+                });
+              },
               child: Icon(
                 Icons.logout,
               ),
@@ -146,7 +151,11 @@ class _newinvoiceState extends State<newinvoice> {
               width: 10,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  //todo: create setting page
+                });
+              },
               child: Icon(
                 Icons.settings,
               ),
@@ -167,7 +176,12 @@ class _newinvoiceState extends State<newinvoice> {
         width: 100,
         height: 100,
         child: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            setState(() {
+              Navigator.of(context)
+                  .pushNamed('createinvoice');
+            });
+          },
           child: Icon(
             Icons.add,
             size: 68,

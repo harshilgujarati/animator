@@ -10,6 +10,14 @@ AppBar mainappbar = AppBar(
   leading: Image(
     image: AssetImage('assets/images/invoice logo.png'),
   ),
+  actions: [
+    IconButton(
+      onPressed: () {},
+      icon: Icon(
+        Icons.sunny,
+      ),
+    )
+  ],
   backgroundColor: Color.fromRGBO(25, 157, 117, 100),
 );
 
@@ -26,10 +34,11 @@ Padding normalpadding = Padding(padding: EdgeInsets.all(20));
 bool isDarkMode = false;
 
 class Globals {
-  static List <Items> All_Items = [];
+  static List<Items> All_Items = [];
 }
-String ? Name;
-String ? monumber;
-String ? pincode;
-String ? email;
-String ? city;
+
+String? Name;
+String? monumber;
+String? pincode;
+String? email;
+String? city;

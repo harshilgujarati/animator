@@ -95,22 +95,45 @@ class _BillPageState extends State<BillPage> {
                       ],
                     ),
                     pw.SizedBox(height: 20),
-                    pw.Text("${Name}"),
-                    pw.Text("${monumber}"),
-                    pw.Text("${email}"),
-                    pw.Text("${pincode}"),
+                    pw.Text(
+                      "Your Name : ${Name}\n",
+                      style: pw.TextStyle(
+                        fontWeight: pw.FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
+                    pw.Text(
+                      "Mobile : ${monumber}\n",
+                      style: pw.TextStyle(
+                        fontWeight: pw.FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
+                    pw.Text(
+                      "Email : ${email}\n",
+                      style: pw.TextStyle(
+                        fontWeight: pw.FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
+                    pw.Text(
+                      "Pincode : ${pincode}",
+                      style: pw.TextStyle(
+                        fontWeight: pw.FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
                     pw.SizedBox(height: 14),
                     pw.Row(
                       mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
                       children: [
                         pw.Text(
                           'Invoice No: 123',
-                          style: pw.TextStyle(
-                              fontSize: 12, fontWeight: pw.FontWeight.bold),
+                          style: pw.TextStyle(fontSize: 18,fontWeight: pw.FontWeight.bold,),
                         ),
                         pw.Text(
                           'Date: ${DateTime.now().toString()}',
-                          style: pw.TextStyle(fontSize: 12),
+                          style: pw.TextStyle(fontSize: 18,fontWeight: pw.FontWeight.bold,),
                         ),
                       ],
                     ),
